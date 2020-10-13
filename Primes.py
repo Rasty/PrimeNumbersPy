@@ -1,22 +1,18 @@
-########################################################
-#
-#
-#
-#######################################################
+## Python Prime Number Generator ##
 
 import math
 
 primes = []
 
-def isPrime(number):
-       if number<=1:
+def isPrime(PrimesNumber):
+       if PrimesNumber<=1:
            return False
-       if number==2:
+       if PrimesNumber==2:
            return True
-       if number%2==0:
+       if PrimesNumber%2==0:
            return False
-       for ind in range(3,int(math.sqrt(number))+1):
-           if number%ind==0:
+       for ind in range(3,int(math.sqrt(PrimesNumber))+1):
+           if PrimesNumber%ind==0:
                return False
        return True
 
